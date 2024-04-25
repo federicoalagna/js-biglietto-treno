@@ -35,4 +35,8 @@ else if (etaUser < 18)
 
 
 const prezzoTotale = prezzoBase - sconto
+console.log('prezzoTotale: ', prezzoTotale)
 
+// Formatta l'output con massimo due decimali
+const prezzoFormattato = prezzoTotale.toFixed(2);
+console.log('prezzoFormattato: ', prezzoFormattato)
