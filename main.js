@@ -39,4 +39,10 @@ console.log('prezzoTotale: ', prezzoTotale)
 
 // Formatta l'output con massimo due decimali
 const prezzoFormattato = prezzoTotale.toFixed(2);
-console.log('prezzoFormattato: ', prezzoFormattato)
+console.log('prezzoFormattato:', prezzoFormattato)
+
+// Mostro il prezzo all'utente
+let currentElement = document.getElementById(`prezzo`);
+let currentText = currentElement.innerHTML;
+currentText =  ` ${ currentText}${ prezzoFormattato} €`
+currentElement.innerHTML = currentText;
